@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 import Ilex from '../../App/variables'
 const styles = css`
     background-color: #fff;
-    border: 2px solid ${Ilex.dragItem};
+    border: 1px dashed ${Ilex.dragItem};
     color: ${Ilex.violeta2};
     display: inline-block;
     padding: 0.6em 0.6em;

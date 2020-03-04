@@ -13,9 +13,11 @@ import Modal from '../Generales/Modal'
 import styled from 'styled-components'
 import styles, { DraggablesContainer, AreasContainer, ProgressbarContainer, UiButtonsContainer } from './Actividad_styles'
 import Ilex from '../../App/variables'
+import {IRow} from '../Grid'
 // import interaction from './Actividad_interactions'
 import dataItems from './Actividad_data'
 import { useState } from 'react'
+import ButtonInfo from '../ButtonInfo'
 
 const Actividad_base = ({staticContext, ...props}) => {
     const [itemsCompletados, modItemsCompletados] = useState([])
@@ -40,13 +42,14 @@ const Actividad_base = ({staticContext, ...props}) => {
     const area_1 = useRef()
     const area_2 = useRef()
     const area_3 = useRef()
-
+    const area_4 = useRef()
+    const area_5 = useRef()
  
     return (
         <Container bgImage='./src/bg_actividad1.png' {...props} id="area" h={50}>
             
             <UiButtonsContainer>
-                <ButtonUi icon='ilx-ayuda' tooltip='Drag the words to the appropriate box, plural, female or male.' />
+                <ButtonUi icon='ilx-ayuda' tooltip='First listen to the audios, then organize the phrases in the boxes that correspond to each audio' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.href = '/actividad1'} } />
             </UiButtonsContainer>
 
@@ -55,11 +58,18 @@ const Actividad_base = ({staticContext, ...props}) => {
             </ProgressbarContainer>
             
 
-
             <MainTitle color={Ilex.violeta2}>
-            LISTEN AND PRACTICE FAMILY MEMBERS. THEN, CLASSIFY EACH FAMILY MEMBER BY ITS GENDER.
+            LISTEN TO THE CONVERSATIONS. READ THE SENTENCES AND PUT THEM IN THEIR  CORRESPONDING BOXES ACCORDING TO THE AUDIOS
             </MainTitle>
             
+            <IRow className="listado-audio" justify="center" w={85} gutters={1} align="center">
+                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 1</ButtonInfo>
+                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 2</ButtonInfo>
+                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 3</ButtonInfo>
+                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 4</ButtonInfo>
+                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 5</ButtonInfo>
+            </IRow>
+
             <DraggablesContainer>
                 
                 { dataItems.map((dato)=>{
@@ -70,9 +80,12 @@ const Actividad_base = ({staticContext, ...props}) => {
 
             </DraggablesContainer>
             <AreasContainer >
-                <Area title='Plural' data-target="area_1" id="area_1" ref={area_1} />
-                <Area title='Female' data-target="area_2" id="area_2" ref={area_2} />
-                <Area title='Male' data-target="area_3" id="area_3" ref={area_3} />
+                <Area title='audio 1' data-target="area_1" id="area_1" ref={area_1} />
+                <Area title='audio 2' data-target="area_2" id="area_2" ref={area_2} />
+                <Area title='audio 3' data-target="area_3" id="area_3" ref={area_3} />
+                <Area title='audio 4' data-target="area_4" id="area_4" ref={area_4} />
+                <Area title='audio 5' data-target="area_5" id="area_5" ref={area_5} />
+
             </AreasContainer>
 
             <Modal visible={comprobarPrueba()} ok w={25} nxtUrl='/actividad2' />

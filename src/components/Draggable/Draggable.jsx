@@ -61,7 +61,6 @@ const Draggable_base = React.forwardRef(({ areaDrag, audio, name, target, elemen
     return (
         <div {...props} ref={itemDraggable}>
             <div className='draggable' >
-            <BocinaButton audio={audio} />
             <span>{ name }</span>
             </div>
 
