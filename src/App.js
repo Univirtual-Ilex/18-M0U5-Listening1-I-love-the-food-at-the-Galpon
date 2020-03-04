@@ -58,6 +58,7 @@ const App = () => {
           <Route path='/actividad2' component={Actividad2} />
           <Route path='/actividad2a' component={Actividad2A} />
           <Route path='/actividad3' component={Actividad3} />
+          
         </BrowserRouter>
 
       </Fondo>
