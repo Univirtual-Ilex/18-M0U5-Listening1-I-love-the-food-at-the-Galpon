@@ -5,7 +5,11 @@ import Ilex from '../../App/variables'
 import animations from './Actividad_animations'
 
 const mistyles = css`
-
+.listado-audio{
+    div{
+        margin-bottom:1em;
+    }
+}
 `
 
 export const DraggablesContainer = styled.div`

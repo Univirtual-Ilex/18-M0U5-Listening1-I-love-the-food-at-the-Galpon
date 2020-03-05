@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import styles from './Draggable_styles'
-import BocinaButton from '../BocinaButton'
+//import BocinaButton from '../BocinaButton'
 import { gsap, TweenLite } from 'gsap'
 import { Draggable} from 'gsap/Draggable'
 

@@ -3,6 +3,7 @@ import Ilex from '../../App/variables'
 import {margin, padding } from '../Grid/Grid_styles'
 // import Ilex from '../../App/variables'
 const styles = css`
+position: relative;
 button{
     background: linear-gradient(90deg, #1B1E5A, #863FFD);
     box-shadow: 0 0.5em 0 0 ${Ilex.verde};
@@ -35,6 +36,37 @@ button.running{
     box-shadow: 0 0.5em 0 0 ${Ilex.verde};
 }
 
+
+`
+
+export const buttonAudio3 = css`
+
+button{
+    box-shadow: 0 0.4em 0 0 ${Ilex.dragItem};
+    border-radius:0.5em;
+    font-size: 1.1em;
+    text-transform:uppercase;
+    font-weight:bolder;
+    font-family:${Ilex.titulos};
+    padding: ${ (props) => ( padding(props) === '0em'? '0.5em 0.6em' : padding(props) )};
+    background: transparent;
+    background-color:${Ilex.violeta2};
+    display:flex;
+    align-items:center;
+    &::before{
+        content:'';
+        display:inline-block;
+        width: 1.3em;
+        height:1.3em;
+        background-image:url(./src/SVG/bocina.svg);
+        background-size:contain;
+        background-repeat: no-repeat;        
+    }
+}
+
+button.running{
+    box-shadow: 0 0.5em 0 0 ${Ilex.verde};
+}
 
 `
 

@@ -7,13 +7,14 @@ import DraggableItem from '../Draggable'
 import Area from '../AreaDrop'
 import ButtonUi from '../ButtonControlUI'
 import Modal from '../Generales/Modal'
+import {ButtonAudio3} from '../ButtonAudio'
 
 
 // Styles
 import styled from 'styled-components'
 import styles, { DraggablesContainer, AreasContainer, ProgressbarContainer, UiButtonsContainer } from './Actividad_styles'
 import Ilex from '../../App/variables'
-import {IRow} from '../Grid'
+import {IRow, ICol} from '../Grid'
 // import interaction from './Actividad_interactions'
 import dataItems from './Actividad_data'
 import { useState } from 'react'
@@ -46,7 +47,7 @@ const Actividad_base = ({staticContext, ...props}) => {
     const area_5 = useRef()
  
     return (
-        <Container bgImage='./src/bg_actividad1.png' {...props} id="area" h={50}>
+        <Container bgImage='./src/bg_actividad1.png' {...props} id="area" h={55}>
             
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='First listen to the audios, then organize the phrases in the boxes that correspond to each audio' />
@@ -62,12 +63,20 @@ const Actividad_base = ({staticContext, ...props}) => {
             LISTEN TO THE CONVERSATIONS. READ THE SENTENCES AND PUT THEM IN THEIR  CORRESPONDING BOXES ACCORDING TO THE AUDIOS
             </MainTitle>
             
-            <IRow className="listado-audio" justify="center" w={85} gutters={1} align="center">
-                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 1</ButtonInfo>
-                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 2</ButtonInfo>
-                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 3</ButtonInfo>
-                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 4</ButtonInfo>
-                <ButtonInfo imgUrl="src/svg/bocina.svg">AUDIO 5</ButtonInfo>
+            <IRow justify="center" w={85} gutters={1} align="center" py={1}>
+                <ICol w={62} align="center">
+                    <IRow gutters={0.5} justify="center" className="listado-audio" py={0.405}>
+                        <ButtonAudio3 src="./media/audio.mp3">Audio 1</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio.mp3">Audio 2</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio.mp3">Audio 3</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio.mp3">Audio 4</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio.mp3">Audio 5</ButtonAudio3>
+                    </IRow>
+                </ICol>
+                <ICol w={30}>
+                    <ButtonInfo bgColor="#0096ff" px={1} py={1} > CLICK HERE TO VOCABULARY PRACTICE </ButtonInfo>
+                </ICol>
+
             </IRow>
 
             <DraggablesContainer>

@@ -70,6 +70,7 @@ export const stylesCol = css`
     padding: ${ (props)=> (padding(props))  };
     width:${props=> props.w || 100}%;
     margin:${ (props)=> (margin(props))  };
+    text-align: ${props => props.align || 'left'};
 
 `
 
