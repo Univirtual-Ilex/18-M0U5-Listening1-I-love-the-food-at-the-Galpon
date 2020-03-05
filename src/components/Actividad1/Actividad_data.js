@@ -2,198 +2,139 @@ const data = [
 
     {
       "id": 2,
-      "name": "Parents",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": "Hmmm, Thanks, but I don’t like that kind of music",
+      "areaTarget": "area_13"
     },
     {
       "id": 11,
-      "name": "Brother - in - Law",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
+      "name": "How’s everything?",
+      "areaTarget": "area_6"
     },
     {
       "id": 6,
-      "name": "Nephew",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
+      "name": "Yeah, you’re right ha-ha!",
+      "areaTarget": "area_5"
     },
     {
       "id": 1,
-      "name": "Husband",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
+      "name": "Let’s be patient",
+      "areaTarget": "area_4"
     },
     {
       "id": 0,
-      "name": "Niece",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
+      "name": "I’m going to the “Roa Martinez” auditorium to attend a conference about studies in Canada. Do you want to come?",
+      "areaTarget": "area_8"
     },
     {
       "id": 9,
-      "name": "Grandfather",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
+      "name": "I’m starving, and this line is too long to wait for lunch.",
+      "areaTarget": "area_1"
     },
     {
       "id": 7,
-      "name": "Uncle",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
-    },
-    {
-      "id": 30,
-      "name": "Wife",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
+      "name": "Great! I am just here waiting for the storytellers show, what about you?",
+      "areaTarget": "area_7"
     },
     {
       "id": 8,
-      "name": "Siblings",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": " 1.Nothing much! Killing myself studying. I have a Chemistry’s midterm.",
+      "areaTarget": "area_11"
     },
-
     {
       "id": 12,
-      "name": "Son",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
+      "name": "It’s ok, see you around then.",
+      "areaTarget": "area_10"
     },
     {
       "id": 10,
-      "name": "Aunt",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
+      "name": "Not yet! I don’t have much time now, but in the future I hope I can join one. Students learn a lot in research groups.",
+      "areaTarget": "area_24"
     },
     {
       "id": 5,
-      "name": "Children",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": "Do you want to jog with me?",
+      "areaTarget": "area_16",
     },
     {
       "id": 3,
-      "name": "Grandmother",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
+      "name": "There is a rock concert today in building 12, would you like to come? ",
+      "areaTarget": "area_12",
     },
     {
       "id": 13,
-      "name": "Grandson",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
+      "name": "What do you like then?",
+      "areaTarget": "area_18"
     },
     {
       "id": 15,
-      "name": "Grandchildren",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": "Do you belong to any research group in your program?",
+      "areaTarget": "area_23"
     },
 
     {
       "id": 14,
-      "name": "Mother",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
+      "name": "Today in our program we have a student from the mechanical engineering program.",
+      "areaTarget": "area_21"
     },
 
     {
       "id": 17,
-      "name": "Stepsisters",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": "Ok, what about going to the movies next Wednesday?",
+      "areaTarget": "area_14"
     },
     {
       "id": 16,
-      "name": "Daughter",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
+      "name": "No, thanks. I don’t like those events, I always get sleepy.",
+      "areaTarget": "area_9"
     },
 
     {
       "id": 19,
-      "name": "Stepfather",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
+      "name": "Yes, at least lunch looks good.",
+      "areaTarget": "area_2"
     },
 
     {
       "id": 20,
-      "name": "Stepmother",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
+      "name": "I prefer to exercise at the gym or practice some yoga",
+      "areaTarget": "area_19"
     },
 
     {
       "id": 25,
-      "name": "Grandparents",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": "That sounds good. Which movie do you want to watch?",
+      "areaTarget": "area_15"
     },
 
-    {
-      "id": 26,
-      "name": "Relatives",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
-    },
-
-    {
-      "id": 22,
-      "name": "Granddaughter",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
-    },
 
     {
       "id": 18,
-      "name": "Friends",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": "Ugh, no way! I don’t like jogging at noon, it’s too hot.",
+      "areaTarget": "area_17"
     },
 
     {
       "id": 27,
-      "name": "Mother - in - Law",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
-    },
-
-    {
-      "id": 21,
-      "name": "Cousins",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": "Hmmm… I don’t like yoga, it’s boring.",
+      "areaTarget": "area_20"
     },
 
     {
       "id": 29,
-      "name": "Stepbrothers",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_1"
+      "name": "Yes, what about a sports team?",
+      "areaTarget": "area_25"
     },
 
     {
       "id": 23,
-      "name": "Father",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_3"
-    },
-
-    {
-      "id": 28,
-      "name": "Father-in-law",
-      "audio": "media/audio.mp3",
+      "name": "I love beans, yummy!",
       "areaTarget": "area_3"
     },
 
     {
       "id": 24,
-      "name": "Sister-in-law",
-      "audio": "media/audio.mp3",
-      "areaTarget": "area_2"
+      "name": "Well, there are many things I like from this university.",
+      "areaTarget": "area_22"
     }
 
   ]

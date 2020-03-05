@@ -9,6 +9,9 @@ const AreaDrop_base = React.forwardRef(({title, ...props}, ref) => {
     return (
         <div {...props} ref={ref}>
             <h3>{title}</h3>
+            <div>
+                {props.children}
+            </div>
         </div>
     )
 })

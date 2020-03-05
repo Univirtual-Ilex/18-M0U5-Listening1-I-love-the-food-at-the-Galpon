@@ -22,8 +22,16 @@ width:${props => props.w + 'em' || '100%' };
     height:1.5em;
     bottom:0.8em;
     right:1em;
+        .hide{
+            display:none;
+        }
 }
 
+`
+export const tooltip2 = css`
+padding:0.5em 1em 0.5em 1em;
+border-radius:0.5em;
+font-size: 1em;
 `
 
 export default styles

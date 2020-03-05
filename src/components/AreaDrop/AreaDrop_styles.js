@@ -3,7 +3,7 @@ import Ilex from '../../App/variables'
 const styles = css`
 
     width: 20.20em;
-    height: 22.124em;
+    height: 26em;
     background-color: ${Ilex.dragItem};
     background-image: url('src/estado_vacio.png');
     background-repeat: no-repeat;

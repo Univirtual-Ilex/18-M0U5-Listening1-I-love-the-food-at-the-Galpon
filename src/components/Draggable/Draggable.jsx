@@ -15,14 +15,14 @@ import { Draggable} from 'gsap/Draggable'
  * name: Contenido del texto del elemento arrastrable. No usa propchildren
  * target: #id del elemento al que va a apuntar
  * elementId: es un identificador que funciona para definir la identidad de cada instancia
- * // Base
+ * // Base 
  * ref: Recibe la referencia o el conjunto de referencias html del elemento al que apuntará como droppable
  */
 
 const Draggable_base = React.forwardRef(({ areaDrag, audio, name, target, elementId, info, ...props }, ref ) => {
+    
     const itemDraggable = useRef()
     useEffect ( () => {
-
         gsap.registerPlugin(Draggable)
         Draggable.create( itemDraggable.current , { 
             type: 'x,y',

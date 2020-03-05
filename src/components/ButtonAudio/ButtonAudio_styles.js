@@ -69,6 +69,31 @@ button.running{
 }
 
 `
+export const buttonAudio4 = css`
+    button{
+        background-color: #fff;
+        color:${Ilex.violeta2};
+        display: block;
+        width:100%;
+        margin:0;
+        box-shadow:none;
+        &:hover{
+        background-image: none;
+        box-shadow: none; 
+        }
+        &::before{
+            content:'';
+            display:none;
+        }
+        &.running{
+            color: ${Ilex.verde};
+            box-shadow: none;
+        }
+    }
+    
+
+`
+
 
 export default styles
     

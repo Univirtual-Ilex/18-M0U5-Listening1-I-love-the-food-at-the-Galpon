@@ -10,6 +10,9 @@ const mistyles = css`
         margin-bottom:1em;
     }
 }
+.pos-relative{
+    position: relative;
+}
 `
 
 export const DraggablesContainer = styled.div`

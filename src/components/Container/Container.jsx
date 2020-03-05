@@ -49,6 +49,11 @@ const Container = styled(Container_base)`
         background-size: cover;
     }
 
+    @media screen and (max-height: 1080px) {
+        align-items:start;
+        position:relative;
+        top: 2em;
+    }
 `
 
 export default Container
