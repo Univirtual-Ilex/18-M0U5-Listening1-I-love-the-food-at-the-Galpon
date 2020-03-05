@@ -38,5 +38,6 @@ const Gstyle = createGlobalStyle`
         padding:0;
     }
 
+
 `
 export default Gstyle

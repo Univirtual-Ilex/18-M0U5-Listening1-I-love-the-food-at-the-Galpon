@@ -37,7 +37,9 @@ const Actividad_base = ({staticContext, ...props}) => {
     }
 // Comprobar y aprobar el examen
     const comprobarPrueba = () => {
+        console.log('Comprobando items',itemsCompletados, dataItems)
         if(itemsCompletados.length === dataItems.length) {
+            
             return true
         }
         return false
@@ -126,7 +128,15 @@ const area_25 = useRef()
                 
                 { dataItems.map((dato)=>{
                     return(
-                        <DraggableItem name={dato.name} key={dato.id} elementId={dato.id} info={insertarItems} className='dragItem' areaDrag="#area" target={dato.areaTarget} ref={[area_1, area_2, area_3, area_4, area_5, area_6, area_7, area_8, area_9, area_10, area_11, area_12, area_13, area_14, area_15, area_16, area_17, area_18, area_19, area_20]}/>
+                        <DraggableItem 
+                            name={dato.name} 
+                            key={dato.id} 
+                            elementId={dato.id} 
+                            info={insertarItems} 
+                            className='dragItem' 
+                            areaDrag="#area" 
+                            target={dato.areaTarget} 
+                            ref={[area_1, area_2, area_3, area_4, area_5, area_6, area_7, area_8, area_9, area_10, area_11, area_12, area_13, area_14, area_15, area_16, area_17, area_18, area_19, area_20,area_21,area_22,area_23,area_24,area_25]}/>
                     )
                 }) }
 
@@ -149,7 +159,7 @@ const area_25 = useRef()
                         <AreaCircle  data-target="area_8" id="area_8" ref={area_8}> 3 </AreaCircle>
                         <AreaCircle  data-target="area_9" id="area_9" ref={area_9}> 4 </AreaCircle>
                         <AreaCircle  data-target="area_10" id="area_10" ref={area_10}> 5 </AreaCircle>
-                    </ICol>                
+                    </ICol>
                 </Area>
 
 
@@ -169,7 +179,7 @@ const area_25 = useRef()
                         <AreaCircle  data-target="area_17" id="area_17" ref={area_17}> 2 </AreaCircle>
                         <AreaCircle  data-target="area_18" id="area_18" ref={area_18}> 3 </AreaCircle>
                         <AreaCircle  data-target="area_19" id="area_19" ref={area_19}> 4 </AreaCircle>
-                        <AreaCircle  data-target="area_20" id="area_10" ref={area_20}> 5 </AreaCircle>
+                        <AreaCircle  data-target="area_20" id="area_20" ref={area_20}> 5 </AreaCircle>
                     </ICol>                
                 </Area>
                 <Area title='audio 5'> 

@@ -33,7 +33,7 @@ const Draggable_base = React.forwardRef(({ areaDrag, audio, name, target, elemen
             // liveSnap: { points:[{x:100, y:100}], radius: 50}, // {x:100, y:100}, {x:50, y:50}, {x:100, y:100} Puntos en la posición 0x y 0y tambien en la 50x y 50y
             inertia:true,
             onDrag: function (e) {
-                console.log(this.x, this.y)
+                //console.log(this.x, this.y)
 
                 // console.log(this.hitTest(target))
                 // console.log(ref[0].current.dataset.target)
