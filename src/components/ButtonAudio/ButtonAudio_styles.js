@@ -72,7 +72,7 @@ button.running{
 export const buttonAudio4 = css`
     button{
         background-color: #fff;
-        color:${Ilex.violeta2};
+        color:#0096ff;
         display: block;
         width:100%;
         margin:0;

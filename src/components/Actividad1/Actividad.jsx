@@ -1,7 +1,6 @@
 import React, {useRef} from 'react'
 //Components
 import Container from '../Container'
-import ProgressBar from '../ProgressBar'
 import MainTitle from '../MainTitle'
 import DraggableItem from '../Draggable'
 import Area from '../AreaDrop'
@@ -14,7 +13,7 @@ import {Tooltip2} from '../Tooltip'
 
 // Styles
 import styled from 'styled-components'
-import styles, { DraggablesContainer, AreasContainer, ProgressbarContainer, UiButtonsContainer } from './Actividad_styles'
+import styles, { DraggablesContainer, AreasContainer, UiButtonsContainer } from './Actividad_styles'
 import Ilex from '../../App/variables'
 import {IRow, ICol} from '../Grid'
 // import interaction from './Actividad_interactions'
@@ -79,46 +78,42 @@ const area_25 = useRef()
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.href = '/actividad1'} } />
             </UiButtonsContainer>
 
-            <ProgressbarContainer>
-                <ProgressBar progress={0}/>
-            </ProgressbarContainer>
-            
+            <ICol mt={5}>
+                <MainTitle color={Ilex.violeta2}>
+                LISTEN TO THE CONVERSATIONS. READ THE SENTENCES AND PUT THEM IN THEIR  CORRESPONDING BOXES ACCORDING TO THE AUDIOS
+                </MainTitle>
+            </ICol>
 
-            <MainTitle color={Ilex.violeta2}>
-            LISTEN TO THE CONVERSATIONS. READ THE SENTENCES AND PUT THEM IN THEIR  CORRESPONDING BOXES ACCORDING TO THE AUDIOS
-            </MainTitle>
+
             
             <IRow justify="center" w={85} gutters={1} align="center" pt={1.2}>
                 <ICol w={62} align="center">
                     <IRow gutters={0.5} justify="center" className="listado-audio" py={0.405}>
-                        <ButtonAudio3 src="./media/audio.mp3">Audio 1</ButtonAudio3>
-                        <ButtonAudio3 src="./media/audio.mp3">Audio 2</ButtonAudio3>
-                        <ButtonAudio3 src="./media/audio.mp3">Audio 3</ButtonAudio3>
-                        <ButtonAudio3 src="./media/audio.mp3">Audio 4</ButtonAudio3>
-                        <ButtonAudio3 src="./media/audio.mp3">Audio 5</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio1.mp3">Audio 1</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio2.mp3">Audio 2</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio3.mp3">Audio 3</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio4.mp3">Audio 4</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio5.mp3">Audio 5</ButtonAudio3>
                     </IRow>
                 </ICol>
                 <ICol w={30} className="pos-relative">
                     <ButtonInfo bgColor="#0096ff" px={1} py={1}  onClick={() => setTooltipVisibility(!tooltipVisibility)}> CLICK HERE TO VOCABULARY PRACTICE </ButtonInfo>
                     <Tooltip2
-                        visible={tooltipVisibility}
-                        noclose
-                        w="16.6"
-                        pos="0.5em,5.3em"
-                        >
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            <ButtonAudio4 src="./media/audio.mp3">Audio 1</ButtonAudio4>
-                            
+                            visible={tooltipVisibility}
+                            noclose
+                            w="19.5"
+                            pos="0.5em,5.3em"
+                            >
+                                <ButtonAudio4 src="./media/starving.mp3">Starving</ButtonAudio4>
+                                <ButtonAudio4 src="./media/hungry.mp3">Hungry</ButtonAudio4>
+                                <ButtonAudio4 src="./media/yummy.mp3">Yummy</ButtonAudio4>
+                                <ButtonAudio4 src="./media/jogging.mp3">Jogging</ButtonAudio4>
+                                <ButtonAudio4 src="./media/begginers.mp3">Begginers</ButtonAudio4>
+                                <ButtonAudio4 src="./media/sleepy.mp3">Sleepy</ButtonAudio4>
+                                <ButtonAudio4 src="./media/lectures.mp3">Lectures</ButtonAudio4>
+                                <ButtonAudio4 src="./media/research.mp3">Research</ButtonAudio4>
+                                <ButtonAudio4 src="./media/demanding.mp3">Demanding</ButtonAudio4>
+                                
                     </Tooltip2>
                 </ICol>
 
