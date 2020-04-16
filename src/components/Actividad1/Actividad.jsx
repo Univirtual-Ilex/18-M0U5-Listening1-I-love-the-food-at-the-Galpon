@@ -75,7 +75,7 @@ const area_25 = useRef()
             
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='First listen to the audios, then organize the phrases in the boxes that correspond to each audio' />
-                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.href = '/actividad1'} } />
+                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={ () => {window.location.reload()} } />
             </UiButtonsContainer>
 
             <ICol mt={5}>
@@ -188,7 +188,7 @@ const area_25 = useRef()
                 </Area>
             </AreasContainer>
 
-            <Modal visible={comprobarPrueba()} ok w={25} nxtUrl='/actividad2' />
+            <Modal visible={comprobarPrueba()} ok w={25} nxtUrl='#/' />
         </Container>
     )
 
