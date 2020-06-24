@@ -90,8 +90,8 @@ const area_25 = useRef()
                 <ICol w={62} align="center">
                     <IRow gutters={0.5} justify="center" className="listado-audio" py={0.405}>
                         <ButtonAudio3 src="./media/audio1.mp3">Audio 1</ButtonAudio3>
-                        <ButtonAudio3 src="./media/audio2.mp3">Audio 2</ButtonAudio3>
-                        <ButtonAudio3 src="./media/audio3.mp3">Audio 3</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio3.mp3">Audio 2</ButtonAudio3>
+                        <ButtonAudio3 src="./media/audio2.mp3">Audio 3</ButtonAudio3>
                         <ButtonAudio3 src="./media/audio4.mp3">Audio 4</ButtonAudio3>
                         <ButtonAudio3 src="./media/audio5.mp3">Audio 5</ButtonAudio3>
                     </IRow>

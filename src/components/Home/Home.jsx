@@ -14,7 +14,7 @@ const Home_base = function ({ staticContext, ...props}) { // se le pasan las pro
 
                     <div className='bloque-izquierdo entrada-top-Y-2'>
                         <div className='bloque-izquierdo-container'>
-                            <h1> ¡ I love the food at the Galpon! </h1>
+                            <h1> I love the food at the Galpon! </h1>
                             <p>
                             Listen to the conversations. Read the sentences and put them in their corresponding boxes according to the audios.</p>
                             <ButtonLink to='/actividad1'>Start</ButtonLink>
